@@ -12,10 +12,12 @@ module.exports = {
         project: ['apps/app-angular-1/tsconfig.*?.json'],
       },
       extends: [
+        // https://github.com/nrwl/nx/blob/master/packages/eslint-plugin/src/configs/angular.ts
         'plugin:@nx/angular',
         'plugin:@angular-eslint/template/process-inline-templates',
         'plugin:@typescript-eslint/strict-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
+        // https://github.com/nrwl/nx/blob/master/packages/eslint-plugin/src/configs/typescript.ts
         'plugin:@nx/typescript',
       ],
       rules: {
@@ -40,7 +42,10 @@ module.exports = {
     },
     {
       files: ['*.html'],
-      extends: ['plugin:@nx/angular-template'],
+      extends: [
+        // https://github.com/nrwl/nx/blob/master/packages/eslint-plugin/src/configs/angular-template.ts
+        'plugin:@nx/angular-template'
+      ],
       rules: {},
     },
   ],

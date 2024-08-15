@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.scss',
+  selector: 'app-carousel-view',
+  templateUrl: './carousel-view.component.html',
+  styleUrl: './carousel-view.component.scss',
   imports: [CommonModule],
   providers: [],
 })
